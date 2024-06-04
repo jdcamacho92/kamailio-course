@@ -1,0 +1,1 @@
+awk -F '"' '{print $2}' list.txt | sed 's/.so/.cfg/g' | xargs -L 1 touch ##creating all modules
